@@ -23,6 +23,7 @@ body {
 .navigation {
     list-style: none;
     display: flex;
+  	flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 0;
     padding: 0;
@@ -71,14 +72,6 @@ body, p, span, label, input, textarea, button, a {
 }
 
 /* --- Forms & Buttons --- */
-.form-control {
-  border: 1.5px solid #232323;
-  border-radius: 8px;
-  background-color: transparent;
-  box-shadow: none;
-  color: #232323;
-}
-
 .form-control {
   border: 1.5px solid #232323;
   border-radius: 8px;
