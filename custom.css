@@ -74,11 +74,12 @@ body, p, span, label, input, textarea, button, a {
 
 /* --- Forms & Buttons --- */
 .form-control {
-  border: 1.5px solid #232323;
-  border-radius: 8px;
-  background-color: transparent;
-  box-shadow: none;
-  color: var(--color-text);
+	border: 1px solid #232323;
+	border-radius: 8px;
+	background-color: transparent;
+	box-shadow: none;
+	color: var(--color-text);
+	letter-spacing: -1px
 }
 
 .button-container {
