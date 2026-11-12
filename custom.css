@@ -79,7 +79,7 @@ body, p, span, label, input, textarea, button, a {
 	background-color: transparent;
 	box-shadow: none;
 	color: var(--color-text);
-	letter-spacing: -1px
+	letter-spacing: -0.02rem
 }
 
 .button-container {
