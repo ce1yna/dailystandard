@@ -1,9 +1,20 @@
-body {
-    background-color: #F2EFEB;
+:root {
+    --color-bg: #F2EFEB;
+    --color-red: #A60B0B;
+    --color-yellow: #FEEA71;
+    --color-blue: #105086;
+    --color-text: #232323;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
 }
 
+body {
+    background-color: var(--color-bg);
+}
+
+/* --- Header & Navigation --- */
 .siteheader {
-    background-color: #A60B0B;
+    background-color: var(--color-red);
     align-items: flex-end;
     padding-top: 90px;
     padding-bottom: 5px;
@@ -18,32 +29,44 @@ body {
 }
 
 .navigation a {
-    color: #F2EFEB;
+    color: var(--color-bg);
     text-decoration: none;
     font-size: 16px;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
 }
 
+.navigation a:hover,
+.navigation a:focus-visible { /*keyboard focus*/
+    color: var(--color-yellow);
+    text-decoration: underline;
+}
+
+/* --- Typography --- */
 h1, .page-title {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 40px;
-    font-weight: 600; 
+    font-weight: 600;
+    color: var(--color-blue);
+    text-align: center;
 }
 
 h2, .card-title {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 28px;
-    font-weight: 400; 
+    font-weight: 600;
+    color: var(--color-blue);
+    text-align: center;
 }
 
 h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: var(--font-heading);
     font-size: 22px;
     font-weight: 400; 
+	color: var(--color-text);
 }
 
 body, p, span, label, input, textarea, button, a {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-body);
     font-size: 16px; 
 }
 
@@ -55,12 +78,28 @@ body, p, span, label, input, textarea, button, a {
   color: #232323;
 }
 
+/* --- Forms & Buttons --- */
+.form-control {
+  border: 1.5px solid #232323;
+  border-radius: 8px;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--color-text);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .button {
     width: 175px;
     height: 39px;
-    background-color: #FEEA71;
-    color: #232323;
-    font-size: 12px;
+    background-color: var(--color-yellow);
+    color: var(--color-text);
+    font-size: 14px;
     border-radius: 30px;
     border: none;
     cursor: pointer;
@@ -68,9 +107,51 @@ body, p, span, label, input, textarea, button, a {
     align-items: center;
     justify-content: center;
     font-weight: 500;
-   
 }
 
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-content span {
+    font-size: 14px;
+}
+
+.button-arrow {
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 0.2s ease;
+}
+
+.button:hover {
+	filter: brightness(0.95);
+}
+
+.button:hover .button-content {
+	transform: scale(0.98);
+}
+
+.button:hover .button-arrow {
+    transform: translateX(4px);
+}
+
+.button:active {
+	transform: scale(0.98);
+}
+
+.button:focus-visible { /*keyboard focus*/
+	outline: 2px solid var(--color-text);
+	outline-offset: 2px;
+}
+
+.button.active { /*for selected state*/
+    background-color: var(--color-bg);
+    color: var(--color-blue);
+}
+
+/* --- Footer --- */
 .site-footer {
     padding: 20px 0;
 }
@@ -82,11 +163,11 @@ body, p, span, label, input, textarea, button, a {
     margin: 0;
     padding: 0;
     font-size: 16px;
-    color: #232323;
+    color: var(--color-text);
 }
 
 .footer-links a {
-    color: #232323;
+    color: var(--color-text);
     text-decoration: none;
     font-size: 16px;
 }
