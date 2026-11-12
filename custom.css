@@ -70,6 +70,7 @@ body, p, span, label, input, textarea, button, a {
     font-family: var(--font-body);
     font-size: 16px;
 	color: var(--color-text);
+	letter-spacing: -0.02rem
 }
 
 /* --- Forms & Buttons --- */
@@ -79,7 +80,6 @@ body, p, span, label, input, textarea, button, a {
 	background-color: transparent;
 	box-shadow: none;
 	color: var(--color-text);
-	letter-spacing: -0.02rem
 }
 
 .button-container {
