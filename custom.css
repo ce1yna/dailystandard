@@ -75,11 +75,36 @@ body, p, span, label, input, textarea, button, a {
 
 /* --- Forms & Buttons --- */
 .form-control {
-	border: 1px solid #232323;
-	border-radius: 8px;
-	background-color: transparent;
-	box-shadow: none;
-	color: var(--color-text);
+  border: 1px solid #232323;
+  border-radius: 5px;
+  background-color: transparent;
+  box-shadow: none;
+  color: var(--color-text);
+}
+
+#message-container {
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid var(--color-text);
+    border-radius: 15px;
+    background-color: var(--color-bg);
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 420px;
+}
+
+.form-label {
+    font-size: 14px;
+}
+
+#reach-container {
+    width: 100%;
+    max-width: 550px;
+    border: 1px solid var(--color-text);
+    border-radius: 15px;
+    background-color: var(--color-bg);
 }
 
 .button-container {
