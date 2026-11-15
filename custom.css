@@ -96,6 +96,7 @@ h3 {
 
 .form-label {
     font-size: 0.875rem;
+	color: var(--color-text);
 }
 
 #reach-container {
