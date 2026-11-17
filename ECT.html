@@ -25,28 +25,25 @@
 	<!--CONTENT-->
     <main class="product-page">
 		<div class="product-page-image">
-				<div class="slider-wrapper">
-					<div class="slider" aria-roledescription="carousel" aria-label="Everyday Comfort Tee photos">
-						<img id="slide-1" src="images/ECT front.png" alt="Everyday Comfort Tee Front"/>
-						<img id="slide-2" src="images/ECT back.png" alt="Everyday Comfort Tee Back"/>
-					</div>
-					<div class="slider-nav">
-						<a href="#slide-1" aria-label="Show front view">&lt;</a>
-						<a href="#slide-2">&gt;</a>
-					</div>
-				</div>
+            <div class="slider" aria-roledescription="carousel" aria-label="Everyday Comfort Tee photos">
+				<img id="slide-1" src="images/ECT front.png" alt="Everyday Comfort Tee Front"/>
+				<img id="slide-2" src="images/ECT Back.png" alt="Everyday Comfort Tee Back"/>
+			</div>
+			<div class="slider-nav">
+				<a href="#slide-1" aria-label="Show front view">&lt;</a>
+				<a href="#slide-2" aria-label="Show back view">&gt;</a>
+			</div>
 		</div>
 
 		<div class="product-details">
 			<h1>Everday Comfort Tee</h1>
-			<p class="price">₱499</p>
 			<p> Product Description: A plain, comfortable tee designed for everyday wear.</p>
 			
 		    <!-- SIZE & QUANTITY -->
 		    <div class="product-options">
                 <fieldset class="size-options">
                     <legend>Select Size</legend>
-                    <label><input type="radio" name="size" value="XS" required><span>XS</span></label>
+                    <label><input type="radio" name="size" value="XS"><span>XS</span></label>
                     <label><input type="radio" name="size" value="S"><span>S</span></label>
                     <label><input type="radio" name="size" value="M"><span>M</span></label>
                     <label><input type="radio" name="size" value="L"><span>L</span></label>
@@ -56,15 +53,15 @@
 
                 <label for="quantity">Quantity</label>
                 <div class="quantity-selector">
-                    <button type="button" id="minus" aria-label="Decrease quantity">-</button>
+                    <button class="quantity-minus" type="button" id="minus" aria-label="Decrease quantity">-</button>
                     <input type="number" id="quantity" value="1" min="0">
-                    <button type="button" id="plus" aria-label="Increase quantity">+</button>
+                    <button class="quantity-plus" type="button" id="plus" aria-label="Increase quantity">+</button>
                 </div>
 
 			</div>
 		</div>	
 	</main>
-
+	  
     <footer class="py-4">
       <div class="container-fluid px-4 d-flex align-items-center gap-4">
         <p class="mb-0">Daily Standard · © 2026</p>
