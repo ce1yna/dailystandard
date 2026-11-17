@@ -15,61 +15,54 @@
       <nav aria-label="Main">
         <ul class="navigation">
           <li><a href="index.html">Home</a></li>
-          <li><a href=shop.html>Shop</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href=index.html#shop>Shop</a></li>
+          <li><a href="index.html#about">About</a></li>
           <li><a href="contact.html">Contacts</a></li>
         </ul>
       </nav>
     </header>
 
-<!--CONTENT-->
-
-  <main class="product-page">
+	<!--CONTENT-->
+    <main class="product-page">
 		<div class="product-page-image">
-			<section class="container">
 				<div class="slider-wrapper">
-					<div class="slider">
-						<img id="slide-1" src="https://github.com/ce1yna/dailystandard/blob/main/images/ECT%20front.png?raw=true" alt="Everyday Comfort Tee Front"/>
-						<!--TEMPORARY BACK DESIGN-->
-						<img id="slide-2" src="https://github.com/ce1yna/dailystandard/blob/main/images/ECT%20front.png?raw=true" alt="Everyday Comfort Tee Back"/>
+					<div class="slider" aria-roledescription="carousel" aria-label="Everyday Comfort Tee photos">
+						<img id="slide-1" src="images/ECT-front.png" alt="Everyday Comfort Tee Front"/>
+						<img id="slide-2" src="images/ECT-back.png" alt="Everyday Comfort Tee Back"/>
 					</div>
 					<div class="slider-nav">
-						<a href="#slide-1"></a>
-						<a href="#slide-2"></a>
+						<a href="#slide-1" aria-label="Show front view">&lt;</a>
+						<a href="#slide-2">&gt;</a>
 					</div>
 				</div>
-				
-			</section>
 		</div>
-	  <!--PRODUCT DETAILS-->
+
 		<div class="product-details">
 			<h1>Everday Comfort Tee</h1>
 			<p class="price">₱499</p>
 			<p> Product Description: A plain, comfortable tee designed for everyday wear.</p>
-
-		<!-- SIZE & QUANTITY -->
-		<div class="product-options">
-
-			<label>Select Size</label>
-
-			<div class="size-options">
-				<button type="button">XS</button>
-				<button type="button">S</button>
-				<button type="button">M</button>
-				<button type="button">L</button>
-				<button type="button">XL</button>
-				<button type="button">2XL</button>
-			</div>
-
-			<label>Quantity</label>
-
-			<div class="quantity-selector">
-				<button type="button">−</button>
-				<span>1</span>
-				<button type="button">+</button>
-			</div>
-		</div>
 			
+		    <!-- SIZE & QUANTITY -->
+		    <div class="product-options">
+                <fieldset class="size-options">
+                    <legend>Select Size</legend>
+                    <label><input type="radio" name="size" value="XS"><span>XS</span></label>
+                    <label><input type="radio" name="size" value="S"><span>S</span></label>
+                    <label><input type="radio" name="size" value="M"><span>M</span></label>
+                    <label><input type="radio" name="size" value="L"><span>L</span></label>
+                    <label><input type="radio" name="size" value="XL"><span>XL</span></label>
+                    <label><input type="radio" name="size" value="2XL"><span>2XL</span></label>
+                </fieldset>
+
+                <label for="quantity">Quantity</label>
+                <div class="quantity-selector">
+                    <button type="button" id="minus" aria-label="Decrease quantity">-</button>
+                    <input type="number" id="quantity" value="1" min="0">
+                    <button type="button" id="plus" aria-label="Increase quantity">+</button>
+                </div>
+
+			</div>
+		</div>	
 	</main>
 
     <footer class="py-4">
