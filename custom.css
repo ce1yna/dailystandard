@@ -154,8 +154,8 @@ h3 {
 }
 
 .button:focus-visible { /*keyboard focus*/
-	outline: 2px solid var(--color-text);
-	outline-offset: 2px;
+	outline: 3px solid var(--color-text);
+	outline-offset: 3px;
 }
 
 .button.active { /*for selected state*/
@@ -203,24 +203,67 @@ h3 {
     text-align: center;
 }
 
+.product-card h3 {
+    font-size: 1.375rem;
+    margin-bottom: 0.125rem;
+}
+
 .product-image {
-    width: 150%;
+    position: relative;
+	width: 150%;
     max-width: 20.75rem;
     height: 20.75rem;
     object-fit: contain;
     margin-top: 2.8125rem;
     margin-bottom: -1.12rem;
+	overflow: hidden;
 }
 
-.product-card h3 {
-    font-size: 1.375rem;
-    margin-bottom: 0.125rem;
+.product-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s ease;
+}
+
+.front-image {
+    transform: translateX(0);
+}
+
+.back-image {
+    transform: translateX(100%);
+}
+
+/* Hover: Front slides out */
+.product-image:hover .front-image {
+    transform: translateX(-100%);
+}
+
+/* Hover: Back slides in */
+.product-image:hover .back-image {
+    transform: translateX(0);
 }
 
 .product-price {
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 0.9375rem;
+}
+
+/* Responsive */
+@media (max-width: 48rem) {
+    .shop-products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 30rem) {
+    .shop-products {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* --- HOME PAGE: About Section --- */
@@ -273,22 +316,7 @@ h3 {
     text-decoration: underline;
 }
 
-/* Responsive */
-@media (max-width: 48rem) {
-    .shop-products {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 30rem) {
-    .shop-products {
-        grid-template-columns: 1fr;
-    }
-}
-
-
 /*Product Page*/
-
 .product-page {
     margin: 0 auto;
     display: flex;
@@ -301,7 +329,6 @@ h3 {
 }
 
 /*LEFT SIDE*/
-
 .product-page-image {
     flex: 1 1 18rem;
     margin-block: 4rem;
@@ -347,7 +374,6 @@ h3 {
 }
 
 /*RIGHT SIDE*/
-
 .product-details {
     flex: 1;
     max-width: 100%;
@@ -370,7 +396,6 @@ h3 {
 }
 
 /*SIZE & QUANTITY*/
-
 .product-options {
     margin-bottom: 2rem;
 }
@@ -382,12 +407,10 @@ h3 {
     font-size: 1rem;
 }
 
-
 .size-options label {
     position: relative;
     display: inline-block;
     margin-bottom: 1rem;
-    
 }
 
 .size-options input {
@@ -412,7 +435,6 @@ h3 {
     cursor: pointer;
     margin-bottom: 1rem;
 }
-
 
 .size-options span:hover {
     background-color: var(--color-yellow);
