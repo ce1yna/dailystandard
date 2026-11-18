@@ -477,7 +477,7 @@ h3 {
 
     .product-page-image,
     .product-details {
-        flex: none;                
+        flex: none;               
         width: 100%;
     }
 
@@ -489,4 +489,3 @@ h3 {
         margin-top: 1rem;
     }
 }
-
