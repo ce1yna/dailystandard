@@ -22,7 +22,50 @@
       </nav>
     </header>
 
-    <!--CONTENT TO BE ADDED-->
+    <!--CONTENT-->
+    <main class="product-page">
+		  <div class="product-page-image">
+        <div class="slider" aria-roledescription="carousel" aria-label="Do Good Work Tee photos">
+				 <img id="slide-1" src="images/DGW front.png" alt="Do Good Work Tee"/>
+				 <img id="slide-2" src="images/DGW back.png" alt="Do Good Work Tee"/>
+			  </div>
+			  <div class="slider-nav">
+				 <a href="#slide-1" aria-label="Show front view">&lt;</a>
+				 <a href="#slide-2" aria-label="Show back view">&gt;</a>
+			  </div>
+		  </div>
+
+		  <div class="product-details">
+			 <h1>Do Good Work Tee</h1>
+			 <p> Product Description: A simple statement for people who believe good work speaks for itself.</p>
+			
+		    <!-- SIZE & QUANTITY -->
+		   <form class="product-options">
+          <fieldset class="size-options">
+            <legend>Select Size</legend>
+            <label><input type="radio" name="size" value="XS"><span>XS</span></label>
+            <label><input type="radio" name="size" value="S"><span>S</span></label>
+            <label><input type="radio" name="size" value="M"><span>M</span></label>
+            <label><input type="radio" name="size" value="L"><span>L</span></label>
+            <label><input type="radio" name="size" value="XL"><span>XL</span></label>
+            <label><input type="radio" name="size" value="2XL"><span>2XL</span></label>
+          </fieldset>
+          
+          <label for="quantity">Quantity</label>
+          <div 
+            <button type="button" id="minus" aria-label="Decrease quantity">-</button>
+            <input type="number" id="quantity" name="quantity" value="1" min="1">
+            <button type="button" id="plus" aria-label="Increase quantity">+</button>
+          </div>
+
+          <button class="order-btn" id="orderBtn">
+            ORDER NOW →
+          </button><!--ORDER BUTTON-->
+
+        </form>
+        
+      </div>	
+    </main>
 
     <footer class="py-4">
       <div class="container-fluid px-4 d-flex align-items-center gap-4">
