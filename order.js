@@ -68,3 +68,24 @@ document.addEventListener("DOMContentLoaded", function () {
       "&body=" + encodeURIComponent(body);
   });
 });
+
+
+//For the slider navigation
+const slider = document.querySelector(".slider");
+const indicators = document.querySelectorAll(".slider-indicators a");
+
+function updateIndicators() {
+    const currentSlide = Math.round(
+        slider.scrollLeft / slider.clientWidth
+    );
+
+    indicators.forEach(function(indicator, index) {
+        indicator.classList.remove("active");
+
+        if (index === currentSlide) {
+            indicator.classList.add("active");
+        }
+    });
+}
+
+slider.addEventListener("scroll", updateIndicators);
