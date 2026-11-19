@@ -374,6 +374,29 @@ h3 {
     color: var(--color-text);
 }
 
+/* Slider Indicators */
+.slider-indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.slider-indicators a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #D9D9D9;
+    display: inline-block;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.slider-indicators a.active {
+    background-color: var(--color-text);
+    transform: scale(1.25);
+}
+
 /*RIGHT SIDE*/
 .product-details {
     flex: 1;
