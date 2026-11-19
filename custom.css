@@ -485,7 +485,7 @@ h3 {
     appearance: textfield;
 }
 
-/*accessbility*/
+/*remove drop down in the quantity*/
 .quantity-selector input::-webkit-inner-spin-button,
 .quantity-selector input::-webkit-outer-spin-button {
     -webkit-appearance: none;
