@@ -621,3 +621,23 @@ h3 {
         margin-top: 0;
     }
 }
+
+
+/* --- Privacy Policy --- */
+
+.policy-content {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 1rem;
+    }
+
+    .policy-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .policy-section h2 {
+      text-align: left;
+      margin-bottom: 1.25rem;
+    }
+
