@@ -164,17 +164,39 @@ h3 {
 }
 
 /* --- HOME PAGE: Hero Section --- */
+/* --- HOME PAGE: Hero Section --- */
 .hero-section {
-    background-color: var(--color-bg);
-    text-align: center;
+    background-image: url("images/backdrop.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-
+    
 .hero-logo {
     width: 45rem;
-    max-width: 80%;
+    max-width: 65vw;
     height: auto;
     display: block;
     margin: 0 auto;
+}
+
+/* mobile */
+@media (max-width: 48rem) {
+    .hero-section {
+        background-image: url("images/backdrop-mobile.png");
+        background-position: center;
+        background-size: cover;
+    }
+    .hero-logo {
+        width: 90%;
+        max-width: 90%;
+    }
 }
 
 /* --- HOME PAGE: Shop Now Section --- */
