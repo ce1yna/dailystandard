@@ -24,4 +24,5 @@ function buildMailto() {
 form.addEventListener("submit", function (event) {
   event.preventDefault();
   window.location.href = buildMailto();
+  form.reset();
 });
