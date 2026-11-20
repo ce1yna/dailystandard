@@ -132,6 +132,7 @@ h3 {
     flex-wrap: wrap;
     align-items: center;
     gap: 0.625rem;
+	transition: transform 0.2s ease;
 }
 
 .button-content span {
