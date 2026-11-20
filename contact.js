@@ -8,7 +8,7 @@ function buildMailto() {
   const subjectText = document.querySelector("#subject").value;
   const text = document.querySelector("#message").value;
 
-  const subject = "Website message: " + subjectText;
+  const subject = "Daily Standard: " + subjectText;
   const body =
     "Name: " + name + "\r\n" +
     "Email: " + email + "\r\n\r\n" +
