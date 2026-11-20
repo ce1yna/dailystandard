@@ -196,7 +196,7 @@ h3 {
 /* mobile */
 @media (max-width: 48rem) {
     .hero-section {
-        background-image: url("images/backdrop-mobile.png");
+        background-image: url("images/backdropmobile.png");
         background-position: center;
         background-size: cover;
     }
