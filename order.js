@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
       "Page: " + window.location.href + "\r\n\r\n" +
       "--------------------------------\r\n" +
       "CUSTOMER DETAILS\r\n" +
+      "Please input the following details:\r\n" +
       "--------------------------------\r\n" +
       "Name:\r\n" +
       "Delivery address:\r\n" +
