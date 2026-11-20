@@ -22,6 +22,11 @@ body {
     align-items: flex-end;
     padding-top: 5.625rem;
     padding-bottom: 0.313rem;
+	position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navigation {
@@ -110,7 +115,7 @@ h3 {
     height: 39px;
     background-color: var(--color-yellow);
     color: var(--color-text);
-    font-size: 0.874rem;
+    font-size: 0.875rem;
     border-radius: 30px;
     border: none;
     cursor: pointer;
