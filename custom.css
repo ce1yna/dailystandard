@@ -301,7 +301,7 @@ h3 {
 /* --- HOME PAGE: About Section --- */
 .about-section {
     text-align: center;
-    padding: 4.55rem 1.25rem;
+    padding: 5.25rem 1.25rem;
 }
 
 .about-section h1 {
@@ -312,8 +312,8 @@ h3 {
     display: grid;
     grid-template-columns: 1.5fr 1fr;
     align-items: center;
-    gap: 4.5rem;
-    max-width: 68rem;
+    gap: 10rem;
+    max-width: 70rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -359,11 +359,11 @@ h3 {
         gap: 2rem;
     }
 
-    .about-image-container {
+    .about-text {
         grid-row: 1;
     }
 
-    .about-text {
+    .about-image-container {
         grid-row: 2;
     }
 }
