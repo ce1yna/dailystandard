@@ -51,15 +51,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const subject = "Order: " + productName;
     const body =
-      "Hello Daily Standard,\n\n" +
-      "I would like to order the following:\n\n" +
-      "Product: " + productName + "\n" +
-      "Size: " + checkedSize.value + "\n" +
-      "Quantity: " + quantity + "\n\n" +
-      "Page: " + window.location.href + "\n\n" +
-      "Name:\n" +
-      "Delivery address:\n" +
-      "Contact number:\n\n" +
+      "Hello Daily Standard,\r\n\r\n" +
+      "I would like to order the following:\r\n\r\n\r\n" +
+      "--------------------------------\r\n" +
+      "ORDER DETAILS\r\n" +
+      "--------------------------------\r\n" +  
+      "Product: " + productName + "\r\n" +
+      "Size: " + checkedSize.value + "\r\n" +
+      "Quantity: " + quantity + "\r\n\r\n" +
+      "Page: " + window.location.href + "\r\n\r\n" +
+      "--------------------------------\r\n" +
+      "CUSTOMER DETAILS\r\n" +
+      "--------------------------------\r\n" +
+      "Name:\r\n" +
+      "Delivery address:\r\n" +
+      "Contact number:\r\n\r\n" +
       "Thank you!";
 
     window.location.href =
